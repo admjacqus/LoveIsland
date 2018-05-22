@@ -1,0 +1,505 @@
+$pink: #fd75a4;
+$light: #fed7d8;
+$yellow: #fed731;
+
+@font-face {
+	font-family: "IntegralCF-Bold";
+	src: url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.eot");
+	src: url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.woff2")
+			format("woff2"),
+		url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.woff")
+			format("woff"),
+		url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.ttf")
+			format("truetype"),
+		url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.svg#youworkforthem")
+			format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.std {
+	background: transparent;
+}
+body {
+	background: lighten(#8cc6c3, 10%);
+}
+
+.email-me {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	p,
+	span,
+	input {
+		font-family: IntegralCF-Bold, Missguided, sans-serif;
+		font-style: bold;
+		font-weight: 900;
+		text-transform: uppercase;
+		&:not(input):not(p) {
+			transform: skewX(-5deg);
+		}
+	}
+	.lowercase {
+		text-transform: lowercase;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		flex-wrap: wrap;
+
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	button.button {
+		background: #0000;
+		border-color: $pink;
+		color: $pink;
+		&:hover {
+			border-color: $pink;
+			background: $pink;
+			color: $light;
+		}
+	}
+}
+button#vidpause {
+	font-family: IntegralCF-Bold, Missguided, sans-serif;
+	letter-spacing: 5px;
+	position: absolute;
+	top: 15%;
+	left: 10px;
+	width: 40px;
+	height: 40px;
+	padding: 5px 5px 5px 10px;
+	margin: 0;
+	color: #323232;
+	background: #fff;
+	border: none;
+	border-radius: 30px;
+}
+video#bgvid {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background: url(https://media.missguided.co.uk/image/upload/e_blur:400/v1526483213/palms_gbqogr.gif)
+		no-repeat;
+	background-size: cover;
+	// opacity: 0.7;
+	transition: 1s opacity;
+	&.stopfade {
+		opacity: 0.75;
+	}
+}
+
+.intro {
+	color: white;
+	margin: 0 auto 5%;
+	z-index: 0;
+	max-width: 1000px;
+}
+.logos {
+	text-align: center;
+	color: white;
+	max-width: 960px;
+	margin: 15% auto;
+	svg {
+		max-width: 500px;
+		width: 50%;
+	}
+}
+h1.clock {
+	font-size: 42px;
+	line-height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	max-width: 1800px;
+	margin: 5% auto;
+	div {
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 3vw;
+		line-height: 5vw;
+		span {
+			font-size: 7vw;
+			line-height: 5vw;
+			margin-bottom: 5px;
+			text-align: center;
+		}
+	}
+}
+h3.copy {
+	font-size: 18px;
+	line-height: 26px;
+	max-width: 650px;
+	padding: 0 5%;
+	margin: 0 auto;
+}
+
+.sign-up {
+	background: $yellow;
+	color: $pink;
+
+	/* Style the buttons that are used to open and close the accordion panel */
+	.marquee {
+		padding: 10px 0;
+		overflow: hidden;
+		background-color: $yellow;
+		color: $pink;
+		cursor: pointer;
+		h1 {
+			margin: 0;
+			line-height: 40px;
+		}
+		svg {
+			fill: $pink;
+			width: 50px;
+			height: 50px;
+			margin: 0 50px;
+		}
+		* {
+			float: left;
+		}
+		transition: background-color ease 300ms;
+		&:hover {
+			background-color: darken($yellow, 10%);
+		}
+	}
+
+	.panel {
+		background-color: $yellow;
+		color: $pink;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		width: 100vw;
+		&.open {
+			max-height: 100vh;
+			max-width: 960px;
+			margin: 0 auto;
+			height: 100%;
+			padding: 1em 1em 5%;
+		}
+		h1 {
+			font-size: 28px;
+			text-align: center;
+		}
+		h4,
+		h5 {
+			text-align: center;
+			max-width: 720px;
+			margin: 2.5% auto;
+		}
+		h5.tc {
+			transform: skewX(0deg);
+			text-transform: none;
+			text-align: left;
+			font-size: 9px;
+			font-family: Missguided, arial, sans-serif;
+			font-weight: 300;
+			// max-width: 350px;
+			margin: 10px auto;
+		}
+		h4 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		h3.or {
+			font-size: 4vw;
+			margin: 5% auto;
+		}
+		.wrap {
+			min-width: 350px;
+			max-width: 550px;
+			width: 50%;
+			margin: 0 auto 5%;
+		}
+		ul {
+			width: 100%;
+			max-width: 500px;
+			margin: 0 auto;
+			list-style: none;
+			li {
+				height: 35px;
+				margin-bottom: 1em;
+				h3 {
+					float: left;
+					margin-right: 10px;
+				}
+				h5 {
+					text-align: left;
+					min-width: 400px;
+					line-height: 30px;
+					&.last {
+						line-height: 15px;
+					}
+				}
+			}
+		}
+		.whatsapp {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: white;
+			border-radius: 10px;
+			max-width: 500px;
+			margin: 0 auto;
+
+			h3 {
+				font-size: 1.2em;
+				margin: 0 1em;
+			}
+			svg {
+				width: 50px;
+				height: 50px;
+			}
+		}
+		a.help {
+			font-size: 10px;
+			margin: 10px 0;
+			text-decoration: underline;
+			max-width: 80%;
+		}
+		.email {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			h5 {
+				font-size: 10px;
+				text-align: center;
+				padding: 0 5%;
+			}
+			.form__input {
+				padding: 0;
+				display: table-cell;
+				width: 100%;
+			}
+			input {
+				width: 450px;
+				height: 50px;
+				border: none;
+				margin: 0;
+				padding: 0 0.7rem;
+				font-size: 12px;
+				font-size: 0.75rem;
+				// font-family: "Andale Mono", "Courier New", Courier,
+				// "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+				text-transform: lowercase;
+				// border-radius: 10px 0 0 10px;
+				color: $pink;
+				border-radius: 0;
+				background: none;
+				border-top: 2px solid $pink;
+				border-left: 2px solid $pink;
+				border-bottom: 2px solid $pink;
+				transition: background 300ms ease;
+				// &:focus {
+				// background: white;
+				// }
+			}
+			::-webkit-input-placeholder {
+				/* Chrome/Opera/Safari */
+				text-transform: uppercase;
+				color: $pink;
+			}
+			::-moz-placeholder {
+				/* Firefox 19+ */
+				text-transform: uppercase;
+				color: $pink;
+			}
+			:-ms-input-placeholder {
+				/* IE 10+ */
+				text-transform: uppercase;
+				color: $pink;
+			}
+			:-moz-placeholder {
+				/* Firefox 18- */
+				text-transform: uppercase;
+				color: $pink;
+			}
+			button {
+				margin: 0;
+				height: 50px;
+				width: 50px;
+				// background-color: #ffded9;
+				// border-radius: 0 10px 10px 0;
+
+				border: 2px solid $pink;
+				transition: background-color 300ms ease;
+				svg {
+					height: 20px;
+					width: 20px;
+					fill: $pink;
+					transition: fill ease 300ms;
+				}
+				&:hover {
+					background-color: $pink;
+					svg {
+						fill: $yellow;
+					}
+				}
+			}
+		}
+	}
+}
+
+.form__field-message_error,
+.validation-advice {
+	color: #fd75a4;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	margin: 5px;
+}
+
+.content {
+	background: $pink;
+	padding: 5%;
+	h3 {
+		color: $yellow;
+	}
+	.flex {
+		max-width: 1200px;
+		flex-wrap: nowrap;
+		align-content: center;
+	}
+	.slot {
+		a {
+			color: $pink;
+		}
+		margin: 20px;
+		background: $yellow;
+		color: $pink;
+		flex: 0 1 500px;
+		transition: background ease 300ms;
+		&:hover {
+			background: darken($yellow, 10%);
+		}
+		img {
+			width: 100%;
+		}
+		.copy {
+			padding: 2em;
+			h5 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 12px;
+			}
+			.cta {
+				margin: 0;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.ctas {
+	background: $light;
+	padding: 5% 0;
+	.flex {
+		max-width: 650px;
+	}
+	h3 {
+		color: $pink;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		background: url(https://media.missguided.co.uk/image/upload/e_blur:300/v1526483213/palms_gbqogr.gif);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center right;
+		background-size: cover;
+	}
+	video#bgvid {
+		display: none;
+	}
+	#vidpause {
+		display: none;
+	}
+
+	.email-me {
+		.timer {
+			margin: 5% 0 2%;
+		}
+		.clock span {
+			font-size: 10vw;
+			line-height: 8vw;
+		}
+	}
+
+	.sign-up .panel h4,
+	.email-me h3.copy {
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.sign-up {
+		.panel {
+			.wrap {
+				min-width: 30px;
+				width: 90%;
+				margin: 1em auto;
+			}
+			h3.or {
+				font-size: 30px;
+			}
+			h4 {
+				margin: 0 auto 5%;
+			}
+			ul li h5 {
+				text-align: left;
+				min-width: 180px;
+				line-height: 15px;
+			}
+		}
+
+		.marquee svg {
+			width: 30px;
+			height: 30px;
+			margin: 0 30px;
+		}
+	}
+	.content {
+		.flex {
+			flex-wrap: wrap;
+			.slot {
+				flex: 1 1 200px;
+				max-width: 300px;
+			}
+		}
+	}
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+}
+
+@media (max-width: 600px) {
+	.sign-up .panel .email input {
+		width: 320px;
+	}
+}
