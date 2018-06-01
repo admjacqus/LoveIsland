@@ -1,13 +1,11 @@
 <div class="email-me">
-
     <div class="intro">
         <button id="vidpause">||</button>
 
         <div class="vid-container">
             <button id="vidpause">||</button>
-            <video playsinline autoplay muted loop poster="https://media.missguided.co.uk/image/upload/e_blur:400/v1526483213/palms_gbqogr.gif"
-                id="bgvid">
-                <!-- <source src="video/palms.webm" type="video/webm"> -->
+            <video playsinline autoplay muted loop poster="video/loop.jpg" id="bgvid">
+                <source src="video/loop.webm" type="video/webm">
                 <source src="video/loop.mp4" type="video/mp4">
             </video>
             <div class="wrap">
@@ -93,7 +91,7 @@
                     SHOP LOVE ISLAND
                 </a>
             </li>
-            <li class="tablink" onclick="openPage('Grid', this, 'red')" id="defaultOpen">GET THE LOOK</li>
+            <li class="tablink active" onclick="openPage('Grid', this, 'red')" id="defaultOpen">GET THE LOOK</li>
             <li class="tablink" onclick="openPage('Goss', this, 'green')">GOSS</li>
             <!--   11th Monday <li class="tablink" onclick="openPage('Win', this, 'blue')">WIN</li> -->
             <li class="tablink" onclick="openPage('Ad', this, 'orange')">THE TV AD</li>
@@ -110,12 +108,12 @@
                     var viewerConfig = {
                         stream: "freeeehouse",
                         clientName: "Your Company Name",
-                        layout: "hero",
+                        layout: "standard",
                         heroSeparation: [3, 5, 4],
                         heroStart: 2,
                         heroEnd: 102,
                         columnWidth: 200,
-                        padding: 10,
+                        padding: 8,
                         transitionDuration: "0.4s",
                         diOptions: "qlt=95&w=640",
                         appendTo: $("#my-mediawall"),
@@ -125,8 +123,8 @@
                     };
 
                     var modalConfig = {
-                        showModal: true,
-                        displayText: true,
+                        showModal: false,
+                        displayText: false,
                         displayUsername: false,
                         diOptions: "w=400"
                     };
@@ -215,27 +213,27 @@
 
                         <div class="human">
                             <h1>human1</h1>
-                            <img src="http://placehold.it/500/fd75a4" alt="">
+                            <img src="http://placehold.it/600x400/fd75a4" alt="">
                         </div>
                         <div class="human">
                             <h1>human2</h1>
-                            <img src="http://placehold.it/500/fd75a4" alt="">
+                            <img src="http://placehold.it/600x400/fd75a4" alt="">
                         </div>
                         <div class="human">
                             <h1>human3</h1>
-                            <img src="http://placehold.it/500/fd75a4" alt="">
+                            <img src="http://placehold.it/600x400/fd75a4" alt="">
                         </div>
                         <div class="human">
                             <h1>human4</h1>
-                            <img src="http://placehold.it/500/fd75a4" alt="">
+                            <img src="http://placehold.it/600x400/fd75a4" alt="">
                         </div>
                         <div class="human">
                             <h1>human5</h1>
-                            <img src="http://placehold.it/500/fd75a4" alt="">
+                            <img src="http://placehold.it/600x400/fd75a4" alt="">
                         </div>
                         <div class="human">
                             <h1>human6</h1>
-                            <img src="http://placehold.it/500/fd75a4" alt="">
+                            <img src="http://placehold.it/600x400/fd75a4" alt="">
                         </div>
                     </div>
                     <script>
@@ -379,21 +377,21 @@
         <div class="flex">
             <div>
                 <h1>shop holiday</h1>
-                <img src="http://www.placehold.it/500x300/" alt="">
+                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783251/holiday_gzb2q2.jpg" alt="">
             </div>
             <div>
                 <h1>shop festival</h1>
-                <img src="http://www.placehold.it/500x300/" alt="">
+                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783252/festival_wbrfhs.jpg" alt="">
             </div>
         </div>
         <div class="flex">
             <div>
                 <h1>shop out out</h1>
-                <img src="http://www.placehold.it/500x300/" alt="">
+                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783250/out-out_vrpolv.jpg" alt="">
             </div>
             <div>
                 <h1>shop everydaywear</h1>
-                <img src="http://www.placehold.it/500x300/" alt="">
+                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783252/everyday_wcrjxt.jpg" alt="">
             </div>
         </div>
     </div>
@@ -402,27 +400,27 @@
 
     <div class="email">
         <div class="marquee" id="marquee">
-            <div class="slide">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 108">
-                    <defs>
-                        <style>
-                            .env-1 {
-                                fill: #fd75a4;
-                            }
-                        </style>
-                    </defs>
-                    <title>envelope</title>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <g id="a">
-                                <path class="env-1" d="M164.3,2.6Q161.42,0,156,0H12Q6.59,0,3.7,2.6a1.41,1.41,0,0,1-.3.3Q0,5.86,0,12V96a16.51,16.51,0,0,0,.8,5.4Q3.1,108,12,108H156q8.9,0,11.2-6.6A16.51,16.51,0,0,0,168,96V12q0-6.13-3.4-9.1a2.11,2.11,0,0,1-.3-.3M84,59,16,8H151.9L84,59m73.6,40.2a1.88,1.88,0,0,0,.6.3,4.47,4.47,0,0,1-2.2.5H12a4.47,4.47,0,0,1-2.2-.5,1.88,1.88,0,0,0,.6-.3l56-42a4.33,4.33,0,0,0,.8-.8L81.6,67.2A4,4,0,0,0,84,68a3.92,3.92,0,0,0,2.4-.8l14.4-10.8a4.33,4.33,0,0,0,.8.8l56,42M160,12V91L107.3,51.5,160,12M8,12,60.6,51.5,8,91Z"
-                                />
-                            </g>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 108">
+                <defs>
+                    <style>
+                        .env-1 {
+                            fill: #fd75a4;
+                        }
+                    </style>
+                </defs>
+                <title>envelope</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <g id="a">
+                            <path class="env-1" d="M164.3,2.6Q161.42,0,156,0H12Q6.59,0,3.7,2.6a1.41,1.41,0,0,1-.3.3Q0,5.86,0,12V96a16.51,16.51,0,0,0,.8,5.4Q3.1,108,12,108H156q8.9,0,11.2-6.6A16.51,16.51,0,0,0,168,96V12q0-6.13-3.4-9.1a2.11,2.11,0,0,1-.3-.3M84,59,16,8H151.9L84,59m73.6,40.2a1.88,1.88,0,0,0,.6.3,4.47,4.47,0,0,1-2.2.5H12a4.47,4.47,0,0,1-2.2-.5,1.88,1.88,0,0,0,.6-.3l56-42a4.33,4.33,0,0,0,.8-.8L81.6,67.2A4,4,0,0,0,84,68a3.92,3.92,0,0,0,2.4-.8l14.4-10.8a4.33,4.33,0,0,0,.8.8l56,42M160,12V91L107.3,51.5,160,12M8,12,60.6,51.5,8,91Z"
+                            />
                         </g>
                     </g>
-                </svg>
-                <h1>COUPLE UP WITH US - SIGN UP HERE</h1>
-            </div>
+                </g>
+            </svg>
+            <h1>COUPLE UP WITH US - SIGN UP HERE</h1>
+
         </div>
         <div class="wrap">
             <h5>Be the first to hear about all things Missguided styles Love Island, the latest goss, style edits, exclusive
