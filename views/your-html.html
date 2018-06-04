@@ -4,9 +4,16 @@
 
         <div class="vid-container">
             <button id="vidpause">||</button>
-            <video playsinline autoplay muted loop poster="video/loop.jpg" id="bgvid">
-                <source src="video/loop.webm" type="video/webm">
-                <source src="video/loop.mp4" type="video/mp4">
+            <video preload="auto" playsinline autoplay muted loop poster="video/loop.jpg" id="bgvid">
+
+
+                <!-- mobile -->
+                <!-- <source src="video/loop.webm" type="video/webm" media="all and (min-width:768px)"> -->
+
+                <source src="video/loop.webm" type="video/webm" media="(min-width:768px)">
+                <source src="video/loop.mp4" type="video/mp4" media="(min-width:768px)">
+
+
             </video>
             <div class="wrap">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.49 218.81">
@@ -99,7 +106,8 @@
 
         <div id="Grid" class="grid tabcontent">
             <h2>#ISLANDSTYLE</h2>
-            <h5>Seen something on screen you love? Check out the islander outfits right here…</h5>
+            <h5>Seen something on screen you love?
+                <br> Check out the islander outfits right here…</h5>
 
             <div id="my-mediawall"></div>
             <div id="amp-upload-section"></div>
@@ -179,7 +187,7 @@
         </div>
 
         <div id="Goss" class="tabcontent">
-            <h1>goss</h1>
+            <h2>goss</h2>
             <div class="goss">
                 <h3>if you can't wait that long, read these...</h3>
                 <div class="flex">
@@ -208,7 +216,7 @@
                 </div>
 
                 <div class="meet">
-                    <h1>meet the islanders</h1>
+                    <h3>meet the islanders</h3>
                     <div class="slick">
 
                         <div class="human">
@@ -324,9 +332,9 @@
         </div> -->
 
         <div id="Ad" class="tabcontent ad">
-            <h1>ad</h1>
+            <h2>the tv ad</h2>
             <div class="aspect-ratio">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/X1JTvNifYuE" frameborder="0" allow="autoplay; encrypted-media"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CLlCh5xcZh8" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>
             </div>
 
@@ -373,25 +381,34 @@
     </div>
 
     <div class="ctas">
-        <h1>your summer wardrobe sorted</h1>
+        <h2>your summer wardrobe sorted</h2>
         <div class="flex">
             <div>
-                <h1>shop holiday</h1>
-                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783251/holiday_gzb2q2.jpg" alt="">
+                <a href="/occasion/holiday-shop">
+                    <h1>shop holiday</h1>
+                    <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783251/holiday_gzb2q2.jpg" alt="">
+                </a>
+
             </div>
             <div>
-                <h1>shop festival</h1>
-                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783252/festival_wbrfhs.jpg" alt="">
+                <a href="/occasion/festival-shop">
+                    <h1>shop festival</h1>
+                    <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783252/festival_wbrfhs.jpg" alt="">
+                </a>
             </div>
         </div>
         <div class="flex">
             <div>
-                <h1>shop out out</h1>
-                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783250/out-out_vrpolv.jpg" alt="">
+                <a href="/occasion/party-shop">
+                    <h1>shop out out</h1>
+                    <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783250/out-out_vrpolv.jpg" alt="">
+                </a>
             </div>
             <div>
-                <h1>shop everydaywear</h1>
-                <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1527783252/everyday_wcrjxt.jpg" alt="">
+                <a href="/clothing/casual-wear">
+                    <h1>shop everyday wear</h1>
+                    <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783252/everyday_wcrjxt.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
