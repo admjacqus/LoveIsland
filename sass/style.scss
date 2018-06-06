@@ -4,7 +4,16 @@ $yellow: #fed731;
 @font-face {
   font-family: "IntegralCF-Bold";
   src: url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.eot");
-  src: url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.eot?#iefix") format("embedded-opentype"), url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.woff2") format("woff2"), url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.woff") format("woff"), url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.ttf") format("truetype"), url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.svg#youworkforthem") format("svg");
+  src: url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.woff2")
+      format("woff2"),
+    url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.woff")
+      format("woff"),
+    url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.ttf")
+      format("truetype"),
+    url("https://static.missguided.co.uk/media/upload/FONTS/integral/integral-cf-bold.svg#youworkforthem")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +27,8 @@ body {
 }
 
 .outline {
-  text-shadow: -2px -2px 0 $yellow, 2px -2px 0 $yellow, -2px 2px 0 $yellow, 2px 2px 0 $yellow;
+  text-shadow: -2px -2px 0 $yellow, 2px -2px 0 $yellow, -2px 2px 0 $yellow,
+    2px 2px 0 $yellow;
 }
 
 .email-me {
@@ -124,13 +134,15 @@ body {
           width: 55%;
           margin: 0 auto 5%;
         }
-        h3 {
+        p {
           font-size: 12px;
           line-height: 15px;
           letter-spacing: 1px;
           color: white;
           max-width: 960px;
           margin: 0 10% 1em;
+          text-align: center;
+          color: white;
         }
       }
     }
@@ -168,7 +180,7 @@ body {
       display: flex;
       justify-content: space-evenly;
       list-style: none;
-      max-width: 1200px;
+      max-width: 960px;
       padding: 3em 0 0;
       margin: 0 auto;
       li,
@@ -191,7 +203,7 @@ body {
           background-color: $pink;
           color: $light;
           border-bottom: none;
-          &>a {
+          & > a {
             color: $light;
             background: transparent;
           }
@@ -207,29 +219,44 @@ body {
     }
     &.grid {
       padding-top: 5%;
-      #my-mediawall {
+    }
+  }
+  .amp-grid {
+    div {
+      flex: 200px 1 0;
+      margin: 5px;
+      position: relative;
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
-        width: 85%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      #amp-upload-modal,
-      a.retailer-tcs {
-        display: none;
+        font-size: 16px;
       }
     }
+  }
+  #my-mediawall {
+    color: white;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  #amp-upload-modal,
+  a.retailer-tcs {
+    display: none;
   }
   .goss {
     padding: 0 5%;
     .flex {
       max-width: 1200px;
       flex-wrap: nowrap;
+      justify-content: center;
       align-content: center;
     }
     .slot {
       margin: 20px;
       background: $pink;
-      flex: 0 1 500px;
+      flex: 0 1 350px;
       transition: background ease 300ms;
       &:hover {
         background: darken($pink, 5%);
@@ -241,6 +268,7 @@ body {
         color: white;
         padding: 2em;
         text-align: left;
+        border-top: 1px solid $light;
         h5 {
           font-size: 18px;
         }
@@ -447,7 +475,7 @@ body {
   .email-me .intro .vid-container .wrap {
     padding: 15% 20%;
   }
-  .email-me .intro .vid-container .wrap h3 {
+  .email-me .intro .vid-container .wrap p {
     font-size: 18px;
     line-height: 22px;
   }
@@ -486,9 +514,7 @@ body {
             width: 60%;
             margin: 0 auto 10%;
           }
-          h3 {
-            font-size: 10px;
-            line-height: 12px;
+          p {
             margin: 0 auto 1em;
             max-width: 450px;
           }
@@ -531,6 +557,16 @@ body {
       }
       h5.tc {
         width: 80%;
+      }
+    }
+    .amp-grid {
+      div {
+        flex: 150px 1 0;
+        margin: 5px;
+        position: relative;
+        p {
+          font-size: 12px;
+        }
       }
     }
     .goss {
@@ -592,11 +628,24 @@ body {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .email-me .intro p {
+    text-shadow: 2px 0 5px rgba(0, 0, 0, 0.33);
+  }
+  .email-me .intro .vid-container .wrap svg {
+    margin: 0 0 1em;
+  }
+  .email-me .intro .vid-container {
+    max-width: 100%;
+  }
+  .email-me .email input {
+    width: 280px;
+    height: 50px;
+  }
+}
 
 @media (min-width: 768px) {
   .grid h5 br {
     display: none;
   }
 }
-
-@media (max-width: 600px) {}

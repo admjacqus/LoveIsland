@@ -1,10 +1,11 @@
 <div class="email-me">
-    <div class="intro" style="min-height: 50vh">
+    <div class="intro">
+        <button id="vidpause">||</button>
 
         <div class="vid-container">
             <button id="vidpause">||</button>
             <img src="" alt="" id="bgimg">
-            <video preload="auto" playsinline autoplay muted loop poster="https://media.missguided.co.uk/image/upload/w_800/v1528139806/loop_sgopaw.jpg"
+            <video preload="auto" playsinline autoplay muted loop poster="https://media.missguided.co.uk/image/upload/v1528139806/loop_sgopaw.jpg"
                 id="bgvid">
                 <source src="https://media.missguided.co.uk/video/upload/v1528139759/loop_kckk0r.webm" type="video/webm" media="(min-width:768px)">
                 <source src="https://media.missguided.co.uk/video/upload/v1528139760/loop_hdill8.mp4" type="video/mp4" media="(min-width:768px)">
@@ -71,8 +72,11 @@
                 </svg>
                 <p>WE'VE TEAMED UP WITH LOVE ISLAND TO BRING YOU THE HOTTEST LOOKS FROM INSIDE THE VILLA DIRECT TO YOUR WARDROBE...</p>
                 <div class="more-buttons">
-                    <a href="/clothing/love-island">
-                        <button class="button">SHOP LOVE ISLAND</button>
+                    <!-- <a href="#more">
+                        <button class="button">FIND OUT MORE</button>
+                    </a> -->
+                    <a href="/occasion/holiday-shop">
+                        <button class="button">SHOP HOLIDAY</button>
                     </a>
                 </div>
             </div>
@@ -81,8 +85,14 @@
 
     <div class="tabbed" id="more">
         <ul>
+            <!-- <li class="tablink shop">
+                <a href="https://www.missguided.co.uk">
+                    SHOP HOLIDAY
+                </a>
+            </li> -->
             <li class="tablink active" onclick="openPage('Grid', this, 'red')" id="defaultOpen">GET THE LOOK</li>
             <li class="tablink" onclick="openPage('Goss', this, 'green')">GOSS</li>
+            <!--   11th Monday <li class="tablink" onclick="openPage('Win', this, 'blue')">WIN</li> -->
             <li class="tablink" onclick="openPage('Ad', this, 'orange')">THE TV AD</li>
         </ul>
 
@@ -91,22 +101,6 @@
             <h5>Seen something on screen you love?
                 <br> Check out the islander outfits right here…</h5>
             <div class="flex amp-grid">
-                <!-- wednesday -->
-                <div>
-                    <a href="https://www.missguided.co.uk/red-ultimate-plunge-swimsuit-10068243" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/v1528273742/Samira_z8lx7p.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.missguided.co.uk/blue-cross-front-bikini-set-10091799" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/v1528273742/Hayley_cfkgfr.jpg" alt="">
-
-                        <p>shop now</p>
-                    </a>
-                </div>
-
-                <!-- tuesday -->
                 <div>
                     <a target="_blank" href="https://www.missguided.co.uk/pink-low-side-animal-swimsuit-10091775">
                         <img src="https://media.missguided.co.uk/image/upload/v1528142499/samira1_klxms3.jpg" alt="">
@@ -132,20 +126,37 @@
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://www.missguided.co.uk/gold-metallic-snake-high-waist-bikini-set-10105601">
-                        <img src="https://media.missguided.co.uk/image/upload/v1528192388/kendall1_uhlk5f.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-                </div>
 
+                    <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
+
+
+                </div>
                 <div>
 
                     <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
 
 
                 </div>
+                <div>
+
+                    <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
+
+
+                </div>
+                <div>
+
+                    <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
+                    <p>shop now</p>
+
+                </div>
             </div>
             <div class="more-buttons">
+                <!-- <a href="#more">
+                        <button class="button">FIND OUT MORE</button>
+                    </a> -->
+                <!-- <a href="/occasion/holiday-shop">
+                    <button class="button">SHOP HOLIDAY</button>
+                </a> -->
             </div>
         </div>
 
@@ -155,84 +166,12 @@
                 <!-- <h3>if you can't wait that long, read these...</h3> -->
                 <div class="flex">
                     <div class="slot">
-                        <a href="https://blog.missguided.co.uk/love-island/love-island-style/" target="_blank">
-                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600/v1528274027/lil_y0edfu.jpg" alt="">
-                            <div class="copy">
-                                <h5>which love island couples are still together?</h5>
-                                <p class="lowercase">Find out what's been going on with our fave Love Island couples</p>
-                                <p class="cta">check it out</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slot">
-                        <a href="https://blog.missguided.co.uk/love-island/love-island-party-checklist/" target="_blank">
+                        <a href="https://blog.missguided.co.uk/love-island/love-island-party-checklist/">
                             <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1528139045/party-checlist_wouhyl.jpg" alt="">
                             <div class="copy">
                                 <h5>your love island party checklist</h5>
-                                <p class="lowercase">It's getting to that time of year again. That time of year when 9pm means…</p>
+                                <p class="lowercase">It’s getting to that time of year again. That time of year when 9pm means…</p>
                                 <p class="cta">check it out</p>
-
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="meet">
-                    <h3>meet the islanders</h3>
-                    <div class="slick">
-
-                        <div class="human">
-                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/laura-love-island-outfits/">
-                                <h1>laura</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128678/laura_alwc9q.jpg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="human">
-                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/samira-love-island-outfits/">
-                                <h1>samira</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128682/samira_sx6vh5.jpg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="human">
-
-                            <a href="https://blog.missguided.co.uk/love-island/kendall-love-island-outfits/">
-                                <h1>kendall</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128678/kendall_pqodcz.jpg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="human">
-
-                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/hayley-love-island-outfits/">
-                                <h1>hayley</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128678/hayley_mb93cb.jpg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="human">
-                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/dani-love-island-outfits/">
-                                <h1>dani</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128679/dani_af9xdg.jpg"
-                                    alt="">
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="flex">
-
-                    <div class="slot">
-                        <a href="https://blog.missguided.co.uk/love-island/what-is-love-island/">
-                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382854/eyeballs_kgtsfq.gif" alt="">
-                            <div class="copy">
-                                <h5>so... what is love island?</h5>
-                                <p class="lowercase">Here's the low-down on what Love Island is all about.</p>
-
-                                <p class="cta">read it now</p>
 
                             </div>
                         </a>
@@ -244,6 +183,102 @@
                                 <h5>which love island couples are still together?</h5>
                                 <p class="lowercase">Find out what's been going on with our fave Love Island couples</p>
                                 <p class="cta">check it out</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="meet">
+                    <h3>meet the islanders</h3>
+                    <div class="slick">
+
+                        <div class="human">
+                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/laura-love-island-outfits/">
+                                <h1>laura</h1>
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128678/laura_alwc9q.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="human">
+                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/samira-love-island-outfits/">
+                                <h1>samira</h1>
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128682/samira_sx6vh5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="human">
+
+                            <a href="https://blog.missguided.co.uk/love-island/kendall-love-island-outfits/">
+                                <h1>kendall</h1>
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128678/kendall_pqodcz.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="human">
+
+                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/hayley-love-island-outfits/">
+                                <h1>hayley</h1>
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128678/hayley_mb93cb.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="human">
+                            <a target="_blank" href="https://blog.missguided.co.uk/love-island/dani-love-island-outfits/">
+                                <h1>dani</h1>
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128679/dani_af9xdg.jpg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <script>
+                        $('.slick').slick({
+                            centerMode: true,
+                            centerPadding: '10px',
+                            slidesToShow: 3,
+                            autoplay: true,
+                            responsive: [
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 3
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 1
+                                    }
+                                }
+                            ]
+                        });
+                    </script>
+                </div>
+
+                <div class="flex">
+
+                    <!-- <div class="slot">
+                        <a href="https://blog.missguided.co.uk/love-island/love-island-couples-still-together/">
+                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382647/wed_kvh77k.jpg" alt="">
+                            <div class="copy">
+                                <h5>which love island couples are still together?</h5>
+                                <p class="lowercase">Find out what's been going on with our fave Love Island couples</p>
+
+                                <p class="cta">check it out</p>
+
+                            </div>
+                        </a>
+                    </div> -->
+                    <div class="slot">
+                        <a href="https://blog.missguided.co.uk/love-island/what-is-love-island/">
+                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382854/eyeballs_kgtsfq.gif" alt="">
+                            <div class="copy">
+                                <h5>so... what is love island?</h5>
+                                <p class="lowercase">Here's the low-down on what Love Island is all about.</p>
+
+                                <p class="cta">read it now</p>
+
                             </div>
                         </a>
                     </div>
@@ -264,17 +299,32 @@
 
             </div>
         </div>
+        <!--   11th Monday
+        <div id="Win" class="win tabcontent">
+            <h1>Win a holiday to Mallorca,</h1>
+            <h3>2 tickets to the Love Island final and a £1000 voucher</h3>
+            <h4>How to enter - to enter this Prize Draw you will need to:</h4>
+            <ol>
+                <li>Follow the MG Instagram Account;</li>
+                <li>Find the Post;</li>
+                <li>Comment on the Post tagging the BFF you would like to take on the Holiday (defined below) with you;</li>
+            </ol>
+
+
+        </div> -->
+
         <div id="Ad" class="tabcontent ad">
             <h2>the tv ad</h2>
             <div class="aspect-ratio">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CLlCh5xcZh8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>
             </div>
-            <div class="more-buttons" style="margin-top:1em;">
-                <a href="/clothing/love-island">
-                    <button class="button">SHOP LOVE ISLAND</button>
+
+            <!-- <div class="more-buttons">
+                <a href="/occasion/holiday-shop">
+                    <button class="button">SHOP HOLIDAY</button>
                 </a>
-            </div>
+            </div> -->
         </div>
 
 
@@ -416,7 +466,7 @@
             var vid = jQuery('#bgvid'),
                 img = jQuery('#bgimg');
             vid.remove();
-            img.attr("src", "https://res.cloudinary.com/dw6va4f3q/image/upload/x_1500,y_750,w_2500,h_2500,c_crop/w_600,c_scale/v1527685215/Missguided/2018/Love%20Island%20Holiday/Hero/nqnunyhxu3wanofuuk8x.jpg");
+            img.attr("src", "https://res.cloudinary.com/dw6va4f3q/image/upload/x_1500,y_750,w_2500,h_2500,c_crop/v1527685215/Missguided/2018/Love%20Island%20Holiday/Hero/nqnunyhxu3wanofuuk8x.jpg");
 
         }
 
@@ -442,35 +492,6 @@
             tab.removeClass('active');
             jQuery(this).toggleClass('active');
         });
-
-        jQuery('.slick').slick({
-            centerMode: true,
-            centerPadding: '10px',
-            slidesToShow: 3,
-            autoplay: true,
-            lazyLoad: 'ondemand',
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-
 
     });
 </script>
