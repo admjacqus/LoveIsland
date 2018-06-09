@@ -1,10 +1,11 @@
 <div class="email-me">
-    <div class="intro" style="min-height: 50vh">
+    <div class="intro">
+        <button id="vidpause">||</button>
 
         <div class="vid-container">
             <button id="vidpause">||</button>
             <img src="" alt="" id="bgimg">
-            <video preload="auto" playsinline autoplay muted loop poster="https://media.missguided.co.uk/image/upload/w_800/v1528139806/loop_sgopaw.jpg"
+            <video preload="auto" playsinline autoplay muted loop poster="https://media.missguided.co.uk/image/upload/v1528139806/loop_sgopaw.jpg"
                 id="bgvid">
                 <source src="https://media.missguided.co.uk/video/upload/v1528139759/loop_kckk0r.webm" type="video/webm" media="(min-width:768px)">
                 <source src="https://media.missguided.co.uk/video/upload/v1528139760/loop_hdill8.mp4" type="video/mp4" media="(min-width:768px)">
@@ -71,8 +72,11 @@
                 </svg>
                 <p>WE'VE TEAMED UP WITH LOVE ISLAND TO BRING YOU THE HOTTEST LOOKS FROM INSIDE THE VILLA DIRECT TO YOUR WARDROBE...</p>
                 <div class="more-buttons">
-                    <a href="/clothing/love-island">
-                        <button class="button">SHOP LOVE ISLAND</button>
+                    <!-- <a href="#more">
+                        <button class="button">FIND OUT MORE</button>
+                    </a> -->
+                    <a href="/occasion/holiday-shop">
+                        <button class="button">SHOP HOLIDAY</button>
                     </a>
                 </div>
             </div>
@@ -81,8 +85,14 @@
 
     <div class="tabbed" id="more">
         <ul>
+            <!-- <li class="tablink shop">
+                <a href="https://www.missguided.co.uk">
+                    SHOP HOLIDAY
+                </a>
+            </li> -->
             <li class="tablink active" onclick="openPage('Grid', this, 'red')" id="defaultOpen">GET THE LOOK</li>
             <li class="tablink" onclick="openPage('Goss', this, 'green')">GOSS</li>
+            <!--   11th Monday <li class="tablink" onclick="openPage('Win', this, 'blue')">WIN</li> -->
             <li class="tablink" onclick="openPage('Ad', this, 'orange')">THE TV AD</li>
         </ul>
 
@@ -91,88 +101,62 @@
             <h5>Seen something on screen you love?
                 <br> Check out the islander outfits right here…</h5>
             <div class="flex amp-grid">
-                <!-- friday -->
-                <div>
-                    <a href="https://www.missguided.co.uk/petite-white-multi-crochet-patchwork-dress-10096553" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/v1528445432/Dani_kloaik.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.missguided.co.uk/nude-flared-sleeve-crochet-jumper-10100529" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/v1528445427/Laura_pml1lm.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-                </div>
-                <!-- thursday  -->
-                <div>
-                    <a href="https://www.missguided.co.uk/silver-metallic-knot-front-top-10075599" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528361817/metalic-tie_bkou3n.jpg" alt="">
-                        <p>shop now</p>
-
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.missguided.co.uk/pink-washed-denim-jacket-10092151" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528361817/pink-jacket_kixbg9.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-
-                </div>
-                <!-- wednesday -->
-                <div>
-                    <a href="https://www.missguided.co.uk/red-ultimate-plunge-swimsuit-10068243" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528273742/Samira_z8lx7p.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.missguided.co.uk/blue-cross-front-bikini-set-10091799" target="_blank">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528273742/Hayley_cfkgfr.jpg" alt="">
-
-                        <p>shop now</p>
-                    </a>
-                </div>
-
-                <!-- tuesday -->
                 <div>
                     <a target="_blank" href="https://www.missguided.co.uk/pink-low-side-animal-swimsuit-10091775">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528142499/samira1_klxms3.jpg" alt="">
+                        <img src="https://media.missguided.co.uk/image/upload/v1528142499/samira1_klxms3.jpg" alt="">
                         <p>shop now</p>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.missguided.co.uk/pink-belt-detail-triangle-bikini-set-10096074">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528142499/laura1_qqoc9q.jpg" alt="">
+                        <img src="https://media.missguided.co.uk/image/upload/v1528142499/laura1_qqoc9q.jpg" alt="">
                         <p>shop now</p>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.missguided.co.uk/pink-frill-bikini-bottoms-mix-and-match-10067440">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528142499/hayley1_ujoxhp.jpg" alt="">
+                        <img src="https://media.missguided.co.uk/image/upload/v1528142499/hayley1_ujoxhp.jpg" alt="">
                         <p>shop now</p>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.missguided.co.uk/white-textured-cut-out-bikini-10084680">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528142498/Dani1_jdjalv.jpg" alt="">
+                        <img src="https://media.missguided.co.uk/image/upload/v1528142498/Dani1_jdjalv.jpg" alt="">
                         <p>shop now</p>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://www.missguided.co.uk/gold-metallic-snake-high-waist-bikini-set-10105601">
-                        <img src="https://media.missguided.co.uk/image/upload/w_600/v1528192388/kendall1_uhlk5f.jpg" alt="">
-                        <p>shop now</p>
-                    </a>
-                </div>
 
-                <!-- coming soon -->
-                <div>
                     <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
-                </div>
 
+
+                </div>
+                <div>
+
+                    <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
+
+
+                </div>
+                <div>
+
+                    <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
+
+
+                </div>
+                <div>
+
+                    <img src="https://media.missguided.co.uk/image/upload/v1527783252/coming-soon_gbfvin.jpg" alt="">
+                    <p>shop now</p>
+
+                </div>
             </div>
             <div class="more-buttons">
+                <!-- <a href="#more">
+                        <button class="button">FIND OUT MORE</button>
+                    </a> -->
+                <!-- <a href="/occasion/holiday-shop">
+                    <button class="button">SHOP HOLIDAY</button>
+                </a> -->
             </div>
         </div>
 
@@ -182,27 +166,26 @@
                 <!-- <h3>if you can't wait that long, read these...</h3> -->
                 <div class="flex">
                     <div class="slot">
-                        <a href="https://blog.missguided.co.uk/love-island/love-island-style/" target="_blank">
-                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600/v1528274027/lil_y0edfu.jpg" alt="">
+                        <a href="https://blog.missguided.co.uk/love-island/love-island-party-checklist/">
+                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1528139045/party-checlist_wouhyl.jpg" alt="">
                             <div class="copy">
-                                <h5>Love Island latest – what they wore</h5>
-                                <p class="lowercase">Shop the outfits from tonight's episode here</p>
+                                <h5>your love island party checklist</h5>
+                                <p class="lowercase">It’s getting to that time of year again. That time of year when 9pm means…</p>
                                 <p class="cta">check it out</p>
+
                             </div>
                         </a>
                     </div>
                     <div class="slot">
-                        <a href="https://blog.missguided.co.uk/love-island/love-island-party-checklist/" target="_blank">
-                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1528139045/party-checlist_wouhyl.jpg" alt="">
+                        <a href="https://blog.missguided.co.uk/love-island/love-island-couples-still-together/">
+                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382647/wed_kvh77k.jpg" alt="">
                             <div class="copy">
-                                <h5>your love island party checklist</h5>
-                                <p class="lowercase">It's getting to that time of year again. That time of year when 9pm means…</p>
+                                <h5>which love island couples are still together?</h5>
+                                <p class="lowercase">Find out what's been going on with our fave Love Island couples</p>
                                 <p class="cta">check it out</p>
-
                             </div>
                         </a>
                     </div>
-
                 </div>
 
                 <div class="meet">
@@ -212,38 +195,33 @@
                         <div class="human">
                             <a target="_blank" href="https://blog.missguided.co.uk/love-island/laura-love-island-outfits/">
                                 <h1>laura</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128678/laura_alwc9q.jpg"
-                                    alt="">
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128678/laura_alwc9q.jpg" alt="">
                             </a>
                         </div>
                         <div class="human">
                             <a target="_blank" href="https://blog.missguided.co.uk/love-island/samira-love-island-outfits/">
                                 <h1>samira</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128682/samira_sx6vh5.jpg"
-                                    alt="">
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128682/samira_sx6vh5.jpg" alt="">
                             </a>
                         </div>
                         <div class="human">
 
                             <a href="https://blog.missguided.co.uk/love-island/kendall-love-island-outfits/">
                                 <h1>kendall</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128678/kendall_pqodcz.jpg"
-                                    alt="">
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128678/kendall_pqodcz.jpg" alt="">
                             </a>
                         </div>
                         <div class="human">
 
                             <a target="_blank" href="https://blog.missguided.co.uk/love-island/hayley-love-island-outfits/">
                                 <h1>hayley</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128678/hayley_mb93cb.jpg"
-                                    alt="">
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128678/hayley_mb93cb.jpg" alt="">
                             </a>
                         </div>
                         <div class="human">
                             <a target="_blank" href="https://blog.missguided.co.uk/love-island/dani-love-island-outfits/">
                                 <h1>dani</h1>
-                                <img src="https://media.missguided.co.uk/image/upload/v1528274511/placehold_wye8bp.jpg" data-lazy="https://media.missguided.co.uk/image/upload/v1528128679/dani_af9xdg.jpg"
-                                    alt="">
+                                <img src="https://media.missguided.co.uk/image/upload/v1528128679/dani_af9xdg.jpg" alt="">
                             </a>
                         </div>
 
@@ -254,7 +232,8 @@
                             centerPadding: '10px',
                             slidesToShow: 3,
                             autoplay: true,
-                            responsive: [{
+                            responsive: [
+                                {
                                     breakpoint: 768,
                                     settings: {
                                         arrows: false,
@@ -279,6 +258,18 @@
 
                 <div class="flex">
 
+                    <!-- <div class="slot">
+                        <a href="https://blog.missguided.co.uk/love-island/love-island-couples-still-together/">
+                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382647/wed_kvh77k.jpg" alt="">
+                            <div class="copy">
+                                <h5>which love island couples are still together?</h5>
+                                <p class="lowercase">Find out what's been going on with our fave Love Island couples</p>
+
+                                <p class="cta">check it out</p>
+
+                            </div>
+                        </a>
+                    </div> -->
                     <div class="slot">
                         <a href="https://blog.missguided.co.uk/love-island/what-is-love-island/">
                             <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382854/eyeballs_kgtsfq.gif" alt="">
@@ -288,16 +279,6 @@
 
                                 <p class="cta">read it now</p>
 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slot">
-                        <a href="https://blog.missguided.co.uk/love-island/love-island-couples-still-together/">
-                            <img class="lazyload" src="https://media.missguided.co.uk/image/upload/v1526382647/wed_kvh77k.jpg" alt="">
-                            <div class="copy">
-                                <h5>which love island couples are still together?</h5>
-                                <p class="lowercase">Find out what's been going on with our fave Love Island couples</p>
-                                <p class="cta">check it out</p>
                             </div>
                         </a>
                     </div>
@@ -318,6 +299,19 @@
 
             </div>
         </div>
+        <!--   11th Monday
+        <div id="Win" class="win tabcontent">
+            <h1>Win a holiday to Mallorca,</h1>
+            <h3>2 tickets to the Love Island final and a £1000 voucher</h3>
+            <h4>How to enter - to enter this Prize Draw you will need to:</h4>
+            <ol>
+                <li>Follow the MG Instagram Account;</li>
+                <li>Find the Post;</li>
+                <li>Comment on the Post tagging the BFF you would like to take on the Holiday (defined below) with you;</li>
+            </ol>
+
+
+        </div> -->
 
         <div id="Ad" class="tabcontent ad">
             <h2>the tv ad</h2>
@@ -325,12 +319,15 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CLlCh5xcZh8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>
             </div>
-            <div class="more-buttons" style="margin-top:1em;">
-                <a href="/clothing/love-island">
-                    <button class="button">SHOP LOVE ISLAND</button>
+
+            <!-- <div class="more-buttons">
+                <a href="/occasion/holiday-shop">
+                    <button class="button">SHOP HOLIDAY</button>
                 </a>
-            </div>
+            </div> -->
         </div>
+
+
         <script>
             // to do
             // http://jsfiddle.net/chipChocolate/pghbbju4/13/embedded/result/
@@ -366,14 +363,14 @@
         <h2>your summer wardrobe sorted</h2>
         <div class="flex">
             <div>
-                <a href="/occasion/holiday-shop" target="_blank">
+                <a href="/occasion/holiday-shop">
                     <h1>shop holiday</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783251/holiday_gzb2q2.jpg" alt="">
                 </a>
 
             </div>
             <div>
-                <a href="/occasion/festival-shop" target="_blank">
+                <a href="/occasion/festival-shop">
                     <h1>shop festival</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783252/festival_wbrfhs.jpg" alt="">
                 </a>
@@ -381,13 +378,13 @@
         </div>
         <div class="flex">
             <div>
-                <a href="/occasion/party-shop" target="_blank">
+                <a href="/occasion/party-shop">
                     <h1>shop out out</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783250/out-out_vrpolv.jpg" alt="">
                 </a>
             </div>
             <div>
-                <a href="/clothing/casual-wear" target="_blank">
+                <a href="/clothing/casual-wear">
                     <h1>shop everyday wear</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783252/everyday_wcrjxt.jpg" alt="">
                 </a>
@@ -460,20 +457,16 @@
     jQuery(function () {
         var isMobile = false; //initiate as false
         // device detection
-        if (
-            /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i
-            .test(navigator.userAgent) ||
-            /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i
-            .test(navigator.userAgent.substr(0, 4))) {
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+            || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
             isMobile = true;
             removeVideo();
         }
-
         function removeVideo() {
             var vid = jQuery('#bgvid'),
                 img = jQuery('#bgimg');
             vid.remove();
-            img.attr("src", "https://media.missguided.co.uk/image/upload/v1528280847/pool2_wldfwn.gif");
+            img.attr("src", "https://res.cloudinary.com/dw6va4f3q/image/upload/x_1500,y_750,w_2500,h_2500,c_crop/v1527685215/Missguided/2018/Love%20Island%20Holiday/Hero/nqnunyhxu3wanofuuk8x.jpg");
 
         }
 
@@ -500,34 +493,6 @@
             jQuery(this).toggleClass('active');
         });
 
-        jQuery('.slick').slick({
-            centerMode: true,
-            centerPadding: '10px',
-            slidesToShow: 3,
-            autoplay: true,
-            lazyLoad: 'ondemand',
-            responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-
-
     });
 </script>
 <script>
@@ -538,7 +503,6 @@
         vid.pause();
         pauseButton.innerHTML = "Paused";
     }
-
     function vidFade() {
         vid.classList.add("stopfade");
     }
@@ -558,4 +522,5 @@
             pauseButton.innerHTML = ">";
         }
     });
+
 </script>
