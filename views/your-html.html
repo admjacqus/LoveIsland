@@ -80,7 +80,7 @@
                     <!-- <a href="#more">
                         <button class="button">FIND OUT MORE</button>
                     </a> -->
-                    <a href="/shop">
+                    <a href="/shop" target="_blank">
                         <button class="button">SHOP LOVE ISLAND</button>
                     </a>
                 </div>
@@ -94,7 +94,7 @@
 
         <ul>
             <li class="tablink shop">
-                <a href="https://www.missguided.co.uk">
+                <a href="https://www.missguided.co.uk" target="_blank">
                     SHOP LOVE ISLAND
                 </a>
             </li>
@@ -172,7 +172,8 @@
                         ampAnalyticsBeacon: "https://a1.adis.ws/"
                     };
 
-                    var viewer = new amp.Mediawall(accountConfig, viewerConfig, modalConfig, uploadModalConfig, uploadConfig, instagramUploadConfig);
+                    var viewer = new amp.Mediawall(accountConfig, viewerConfig, modalConfig, uploadModalConfig,
+                        uploadConfig, instagramUploadConfig);
 
                 });
             </script>
@@ -180,7 +181,7 @@
                 <!-- <a href="#more">
                         <button class="button">FIND OUT MORE</button>
                     </a> -->
-                <a href="/shop">
+                <a href="/shop" target="_blank">
                     <button class="button">SHOP LOVE ISLAND</button>
                 </a>
             </div>
@@ -250,8 +251,7 @@
                             centerPadding: '10px',
                             slidesToShow: 3,
                             autoplay: true,
-                            responsive: [
-                                {
+                            responsive: [{
                                     breakpoint: 768,
                                     settings: {
                                         arrows: false,
@@ -342,7 +342,7 @@
                 <!-- <a href="#more">
                         <button class="button">FIND OUT MORE</button>
                     </a> -->
-                <a href="/shop">
+                <a href="/shop" target="_blank">
                     <button class="button">SHOP LOVE ISLAND</button>
                 </a>
             </div>
@@ -384,14 +384,14 @@
         <h2>your summer wardrobe sorted</h2>
         <div class="flex">
             <div>
-                <a href="/occasion/holiday-shop">
+                <a href="/occasion/holiday-shop" target="_blank">
                     <h1>shop holiday</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783251/holiday_gzb2q2.jpg" alt="">
                 </a>
 
             </div>
             <div>
-                <a href="/occasion/festival-shop">
+                <a href="/occasion/festival-shop" target="_blank">
                     <h1>shop festival</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783252/festival_wbrfhs.jpg" alt="">
                 </a>
@@ -399,13 +399,13 @@
         </div>
         <div class="flex">
             <div>
-                <a href="/occasion/party-shop">
+                <a href="/occasion/party-shop" target="_blank">
                     <h1>shop out out</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783250/out-out_vrpolv.jpg" alt="">
                 </a>
             </div>
             <div>
-                <a href="/clothing/casual-wear">
+                <a href="/clothing/casual-wear" target="_blank">
                     <h1>shop everyday wear</h1>
                     <img class="lazyload" src="https://media.missguided.co.uk/image/upload/w_600,q_90/v1527783252/everyday_wcrjxt.jpg" alt="">
                 </a>
@@ -482,6 +482,7 @@
         vid.pause();
         pauseButton.innerHTML = "Paused";
     }
+
     function vidFade() {
         vid.classList.add("stopfade");
     }
