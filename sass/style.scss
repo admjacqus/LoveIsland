@@ -357,7 +357,8 @@ a, a:hover {
         display: flex;
         justify-content: row;
         align-items: center;
-
+        flex-direction: column;
+    justify-content: center;
       }
     }
     ol {
