@@ -47,6 +47,9 @@ $yellow: #fed731;
 body {
   background: $pink;
 }
+a, a:hover {
+  text-decoration: none;
+}
 
 .outline {
   text-shadow: -2px -2px 0 $yellow, 2px -2px 0 $yellow, -2px 2px 0 $yellow, 2px 2px 0 $yellow;
@@ -218,6 +221,7 @@ body {
         text-align: center;
         padding: 2px 10px 5px;
         line-height: 30px;
+            flex: auto;
         &:hover,
         &.active {
           cursor: pointer;
@@ -257,10 +261,7 @@ body {
         max-width: 1200px;
         margin: 0 auto;
       }
-      #amp-upload-modal,
-      a.retailer-tcs {
-        // display: none;
-      }
+
     }
   }
   #my-mediawall {
@@ -339,12 +340,43 @@ body {
     color: $pink;
   }
   .win {
+
+      button.button {
+        background: $pink;
+        color: $yellow;
+        border: 2px solid $pink;
+        margin: 1em;
+      }
+    .flex {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2em;
+      div {
+        flex: 400px 1 0;
+        padding: 1em;
+        display: flex;
+        justify-content: row;
+        align-items: center;
+
+      }
+    }
     ol {
-      max-width: 400px;
-      margin: 0 auto;
-      list-style-type: decimal;
+          max-width: 600px;
+          width: 80%;
+    margin: 0 auto 1em;
+    list-style-type: decimal;
+    font-size: 30px;
       li {
         text-align: left;
+      }
+            a {
+        color: $pink;
+        &:hover {
+          border-bottom: 2px solid $pink;
+        }
+      }
+      h4 {
+        font-size: 18px;
       }
     }
   }
@@ -356,7 +388,7 @@ body {
     padding: 5% 0;
     .flex {
       div {
-        position: relative; // margin-bottom: 5%;
+        position: relative;
         flex: 400px 1 0;
         padding: 1em;
         h1 {
@@ -630,11 +662,21 @@ body {
     }
     .tabbed {
       ul {
+        width: 90%;
         max-width: 600px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
         li {
           font-size: 18px;
-          padding: 2px 8px 5px;
+          padding: 2px 20px 5px;
+          flex: auto;
           line-height: 28px;
+          border-right: 1px $pink solid;
+          &.active {
+            flex: 400px 0 0;
+}
+          
           &.shop {
             display: none;
           }
